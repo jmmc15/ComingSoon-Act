@@ -29,10 +29,10 @@ video {
     width: auto;
     height: auto;
     transform: translateX(-50%) translateY(-50%);
-    z-index: 0
+    z-index: 0;
 }
 
-@media (pointer:coarse) and (hover:none) {
+/* @media (pointer:coarse) and (hover:none) {
     body {
         background: url(../img/bg-mobile-fallback.jpg) #002e66 no-repeat center center scroll;
         background-size: cover
@@ -41,7 +41,7 @@ video {
     body video {
         display: none
     }
-}
+} */
 
 .form-control{
   resize: none;
@@ -51,11 +51,11 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 112%;
     width: 100%;
-    background-color: #cd9557;
-    opacity: 0.7;
-    z-index: 1
+    background-color: #FDE108;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .masthead {
@@ -75,9 +75,8 @@ video {
     left: 0;
     width: 100%;
     min-height: 35rem;
-    opacity: 0.7;
     height: 100%;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .8);
     background-attachment: fixed;
     transform: skewY(4deg);
     transform-origin: bottom right
@@ -91,34 +90,25 @@ video {
     font-size: 1.2rem
 }
 
-.masthead .masthead-content p strong {
-    font-weight: 700
-}
-
-.masthead .masthead-content .input-group-newsletter input {
-    height: auto;
-    font-size: 1rem;
-    padding: 1rem
-}
-
-.masthead .masthead-content .input-group-newsletter button {
-    font-size: .8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 1rem
-}
-
 .thoughts {
     position: relative;
     z-index: 2;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.9);
-    opacity: 0.7;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.thoughts-header {
+    font-size: 1.5em;
 }
 
 .thoughts div>button {
     border: 1px solid #FDE108;
+    width: 100%;
+}
+
+.field:focus {
+    box-sizing: border-box;
+    border: 3px solid #fcda08;
 }
 
 @media (min-width:768px) {
@@ -133,6 +123,7 @@ video {
     .masthead .masthead-bg {
         min-height: 0;
         width: 100%;
+        background: rgba(0, 0, 0, 0.9);
         transform: skewX(-8deg);
         transform-origin: top right
     }
@@ -153,17 +144,22 @@ video {
     .thoughts {
         position: absolute;
         top: 24%;
-        right: 16%;
+        right: 14%;
         z-index: 2;
         width: 30%;
-        background: none;
-        padding: 0;
+        padding: 15px;
+        background: black;
+        border-radius: 2%;
+        border: 3px solid #fcda08;
+    }
 
+    .overlay {
+        height: 100%;
     }
 }
 
 .social-icons {
-    position: absolute;
+    position: relative;
     margin-bottom: 2rem;
     width: 100%;
     z-index: 2
