@@ -93,6 +93,14 @@ video {
     font-size: 1.2rem;
 }
 
+.modal-content{
+  background-color: #cd9557;
+
+}
+
+.modal-body{
+  font-weight: 700;
+}
 .thoughts {
     position: relative;
     z-index: 2;
